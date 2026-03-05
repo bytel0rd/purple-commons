@@ -175,4 +175,18 @@
         </plugins>
 	</build>
 
+    <distributionManagement>
+        <repository>
+            <id>reposilite-repository-releases</id>
+            <name>Reposilite Releases</name>
+            <url>https://maven.internal.blueandgreen.ng/releases</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>reposilite-repository-snapshots</id>
+            <name>Reposilite Snapshots</name>
+            <url>https://maven.internal.blueandgreen.ng/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
