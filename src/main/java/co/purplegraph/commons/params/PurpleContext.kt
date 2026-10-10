@@ -12,3 +12,14 @@ open class PurpleContext(
 ) {
 
 }
+
+fun validatePermission(ctx: PurpleContext, vararg required:  String): Boolean {
+    println(ctx.permissions);
+
+    if (ctx.permissions.contains("master")) {
+        return true;
+    }
+
+    return required.all { r ->  ctx.permissions.contains(r) }
+
+}
